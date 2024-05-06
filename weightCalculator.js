@@ -165,7 +165,9 @@
 
         weightToLift(percentage) {
             let fraction = (percentage / 100);
-            return Math.round(fraction * this.model.oneRM);
+            let trainingMax = this.model.oneRM * 0.9;
+            let TMPercent = fraction * trainingMax
+            return Math.round(TMPercent * 2)/2;
 
         }
 
