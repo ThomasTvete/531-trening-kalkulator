@@ -18,6 +18,10 @@ body{
     font-size: 0.9rem;
 }
 
+.hidden {
+    display: none;
+  }
+
 
 
  /* .inputBox {

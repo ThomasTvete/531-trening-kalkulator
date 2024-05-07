@@ -4,8 +4,14 @@ function loadForm() {
     <div id="programs"></div>
     <div class="userInput">
         <div class="inputBox">
-            <h3>Legg inn øvelse</h3>
-            <input id="exercise" type="text"/>
+            <h3>Velg eller lag øvelse</h3>
+            <input id="exercise" type="text" list="workoutList" onclick="this.value=''"/>
+                <datalist id="workoutList">
+                    <option value="Knebøy">  
+                    <option value="Markløft">
+                    <option value="Benkpress">
+                    <option value="Skulderpress">
+                </datalist>
         </div>
         <div class="inputBox">
             <h3>Legg inn 1RM</h3>
@@ -18,3 +24,4 @@ function loadForm() {
     loadLocalWorkouts();
     loadLocalCheckmarks();
 }
+

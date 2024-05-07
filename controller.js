@@ -13,6 +13,10 @@ function addWorkoutPlan() {
 
 }
 
+// function toggleOther(){
+//     document.getElementById('otherInput').classList.toggle('hidden');
+// }
+
 function saveLocalWorkouts(workoutID) {
     let workout = document.getElementById(workoutID);
     const data = {
