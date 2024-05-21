@@ -24,7 +24,7 @@
             let oneRepMax = this.getAttribute('oneRM');
             let exerciseName = this.getAttribute('id');
 
-            this.model.oneRM = parseInt(oneRepMax);
+            this.model.oneRM = parseFloat(oneRepMax);
             this.model.exercise = exerciseName;
             this.updateView();
         }
